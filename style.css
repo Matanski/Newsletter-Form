@@ -40,6 +40,7 @@ ul{
     list-style-image: url(assets/images/icon-list.svg);
     text-align:left;
     vertical-align: middle;
+    line-height:25px;
 }
 
 .info{
@@ -55,6 +56,19 @@ ul{
 
 
 #email,#submit{
-    width:100%;
+    width:80%;
     box-sizing: border-box;
+    height:40px;
+    border-radius:10px;
+    border:0.5px solid black;
+}
+
+#submit{
+    background-color:hsl(234, 29%, 20%);
+    color:white;
+}
+
+#submit:hover{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    cursor:pointer;
 }
