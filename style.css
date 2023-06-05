@@ -110,14 +110,13 @@ ul{
 }
 
 @media only screen and (max-width: 750px) {
-    body{
-        background-color:white;
-    }
-
     .container{
         flex-direction:column-reverse;
-        padding:0;
-        gap:55px;
+        justify-content:center;
+        background-color:white;
+        height:700px;
+        width:400px;
+        border-radius: 15px;
     }
     .image img{
        content:url(assets/images/illustration-sign-up-mobile.svg);
@@ -130,7 +129,19 @@ ul{
     .linkC{
         margin-top:200px;
     }
-    #dismiss{
-        margin-top:100px;
+    .container-success{
+        display:flex;
+        flex-direction: column;
+        background-color:white;
+        height:600px;
+        width:400px;
+        border-radius: 15px;
+        padding-left: 40px;
+        padding-top:20px;
+        color:hsl(234, 29%, 20%);
     }
+    .link{
+        margin-top:200px;
+    }
+    
 }
