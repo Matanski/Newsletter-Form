@@ -66,9 +66,71 @@ ul{
 #submit{
     background-color:hsl(234, 29%, 20%);
     color:white;
+    border:0;
 }
 
 #submit:hover{
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
     cursor:pointer;
+}
+
+/* Success */
+
+.container-success{
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    height:400px;
+    width:400px;
+    border-radius: 15px;
+    padding-left: 40px;
+    padding-top:20px;
+    color:hsl(234, 29%, 20%);
+}
+
+.successImg{
+    width:60px;
+    height:100px
+}
+
+#dismiss{
+    width:90%;
+    box-sizing: border-box;
+    height:50px;
+    border-radius:10px;
+    border:0 solid black;
+    background-color:hsl(234, 29%, 20%);
+    color:white;
+    margin-top: 20px;
+}
+
+#dismiss:hover{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 750px) {
+    body{
+        background-color:white;
+    }
+
+    .container{
+        flex-direction:column-reverse;
+        padding:0;
+        gap:55px;
+    }
+    .image img{
+       content:url(assets/images/illustration-sign-up-mobile.svg);
+       width:100%;
+    }
+
+    .container-success{
+        border: 1px solid black;
+    }
+    .linkC{
+        margin-top:200px;
+    }
+    #dismiss{
+        margin-top:100px;
+    }
 }
